@@ -2,7 +2,7 @@
 
 **主题介绍**
 
-UPinghsu是一款以前端性能优化为出发点而制作的Typecho主题，同时又兼顾设计美学和视觉传达。修改自原作者chakhsu发布的Pinghsu。
+UPinghsu是一款以前端性能优化为出发点而制作的Typecho主题，同时又兼顾设计美学和视觉传达。修改自原作者chakhsu发布的[Pinghsu][1]。
 
 **下载地址**
 
@@ -133,3 +133,6 @@ All kinds of contributions (enhancements, new features, documentation & code imp
 Open sourced under the MIT license.
 
 根据 MIT 许可证开源。
+
+
+  [1]: https://github.com/chakhsu/pinghsu
