@@ -71,7 +71,7 @@ $comments->alt(' comment-odd', ' comment-even');
     <div id="comments" class="clearfix">
         <?php $this->comments()->to($comments); ?>
         <?php if($this->allow('comment')): ?>
-        <span class="response">Responses<?php if($this->user->hasLogin()): ?> / You are <a href="<?php $this->options->profileUrl(); ?>" data-no-instant><?php $this->user->screenName(); ?></a> here, do you want to <a href="<?php $this->options->logoutUrl(); ?>" title="Logout" data-no-instant>logout</a> ?<?php endif; ?> <?php $comments->cancelReply(' / Cancel Reply'); ?></span>
+        <span class="response">Comments<?php if($this->user->hasLogin()): ?> / You are <a href="<?php $this->options->profileUrl(); ?>" data-no-instant><?php $this->user->screenName(); ?></a> here, do you want to <a href="<?php $this->options->logoutUrl(); ?>" title="Logout" data-no-instant>logout</a> ?<?php endif; ?> <?php $comments->cancelReply(' / Cancel Reply'); ?></span>
         <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" class="comment-form" role="form" onsubmit ="getElementById('misubmit').disabled=true;return true;">
             <?php if(!$this->user->hasLogin()): ?>
             <input type="text" name="author" maxlength="12" id="author" class="form-control input-control clearfix" placeholder="Name (*)" value="" required>

@@ -53,7 +53,7 @@ body>:last-child {
 }
 
 blockquote,dl,ol,p,pre,table,ul {
-	margin: 20px 0;
+	margin: 15px 0;
 	vertical-align: baseline
 }
 
@@ -1036,7 +1036,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
 .post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6 {
 	font-weight: 500;
 	position: relative;
-	margin: 20px 0
+	margin: 15px 0
 }
 
 .post-content h1::before,.post-content h2::before,.post-content h3::before,.post-content h4::before,.post-content h5::before,.post-content h6::before {
@@ -1213,7 +1213,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
 
 .post-info {
 	overflow: hidden;
-	margin: 25px 0px 0;
+	margin: 35px 0px 15px 0px;
 	padding: 15px 20px 15px;
 	white-space: nowrap;
 	color:#31708f;
@@ -1734,7 +1734,7 @@ img.qrcode{
 #comments {
 	max-width: 700px;
 	margin: 0 auto;
-	padding: 0 20px
+	padding: 0 25px
 }
 
 #comments .page-navigator {
