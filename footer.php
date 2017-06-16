@@ -12,11 +12,16 @@
 			<?php if ($this->options->socialgithub): ?>
 				<a class="social github" target="blank" href="<?php $this->options->socialgithub(); ?>">Github</a>
             <?php endif; ?>
-                <a class="social rss" target="blank" href="<?php $this->options->siteUrl(); ?>feed/">Rss</a>
+                <a class="social rss" target="blank" href="<?php $this->options->feedUrl(); ?>">Rss</a>
 			<?php endif; ?>
 			<?php if ($this->options->socialtwitter): ?>
 				<a class="social twitter" target="blank" href="<?php $this->options->socialtwitter(); ?>">Twitter</a>
 			<?php endif; ?>
+            <?php if ($this->user->hasLogin()): ?>
+                <?php if ($this->user->pass('administrator')): ?>
+                    <a class="social admin" target="blank" href="<?php $this->options->adminUrl(); ?>">Admin</a>
+                <?php endif; ?>
+            <?php endif; ?>
 			</div>
 		</div>
 	</div>
