@@ -33,7 +33,7 @@
                     </a>
 					<div class="info-text">
                         <p><a>Hardship increases status.</a></p>
-						<p><a href="http://www.typecho.org" target="_blank" rel="nofollow">Typecho</a> & <a href="https://github.com/Uni9k/Upinghsu-for-typecho" target="_blank">UPinghsu</a></p>
+						<p><a href="http://www.typecho.org" target="_blank" rel="nofollow">Typecho</a> & <a href="https://github.com/Uni9k/Upinghsu" target="_blank">UPinghsu</a></p>
 						<p>&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a></p>
 					</div>
 				</div>

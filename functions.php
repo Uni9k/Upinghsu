@@ -111,6 +111,9 @@ function themeConfig($form) {
     $form->addInput($cdnAddress->addRule('xssCheck', _t('请不要在链接中使用特殊字符')));
     $default_thumb = new Typecho_Widget_Helper_Form_Element_Text('default_thumb', NULL, '', _t('默认缩略图'),_t('文章没有图片时的默认缩略图，留空则无，一般为http://www.yourblog.com/image.png'));
     $form->addInput($default_thumb->addRule('xssCheck', _t('请不要在链接中使用特殊字符')));
+    
+    $qn_del = new Typecho_Widget_Helper_Form_Element_Text('qn_del', NULL, '', _t('首页缩略图要删除的七牛图片样式'),_t('留空则无，一般为imageMogr2/auto-orient/thumbnail/开头的参数，无特殊需求可不管'));
+    $form->addInput($qn_del->addRule('xssCheck', _t('请不要在链接中使用特殊字符')));
 }
 
 function themeInit($archive){
@@ -158,9 +161,9 @@ function parseFieldsThumb($obj){
 
 function parseContent($obj){
     $options = Typecho_Widget::widget('Widget_Options');
-    // if(!empty($options->src_add) && !empty($options->cdn_add)){
-    //     $obj->content = str_ireplace($options->src_add,$options->cdn_add,$obj->content);
-    // }
+    if(!empty($options->src_add) && !empty($options->cdn_add) && empty($options->qn_del)){
+        $obj->content = str_ireplace($options->src_add,$options->cdn_add,$obj->content);
+    }
     $obj->content = preg_replace("/<a href=\"([^\"]*)\">/i", "<a href=\"\\1\" target=\"_blank\" rel=\"nofollow\">", $obj->content);
     echo trim($obj->content);
 }
