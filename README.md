@@ -27,6 +27,33 @@ https://uni9k.me
  - 主题设置添加XSS检测，评论提交防止触发多次
  - 还有更多亮点等你去发现~
 
+## 更多预览
+
+|首页 - 三栏|首页 - 单栏|
+|:------|:------|
+|![](https://ws1.sinaimg.cn/large/7c98397dgy1fdyeg1l1gsj211w0udnjj.jpg)|![](https://ws1.sinaimg.cn/large/7c98397dgy1fdyegxxy5sj211w0ud7j2.jpg)|
+
+|文章内容页 - 题图|文章内容页 - 目录|
+|:------|:------|
+|![](https://ws1.sinaimg.cn/large/7c98397dgy1fdyejnfc0fj211w0ud14o.jpg)|![](https://ws1.sinaimg.cn/large/7c98397dgy1fdyekevycsj211w0ud44f.jpg)|
+
+|页面内容页|内容页 - 评论|
+|:------|:------|
+|![](https://ws1.sinaimg.cn/large/7c98397dgy1fdyerb4zyjj211w0udn0p.jpg)|![](https://ws1.sinaimg.cn/large/7c98397dgy1fdyern8mfjj211w0ud772.jpg)|
+
+|分类页|模板归档页|
+|:------|:------|
+|![](https://ws1.sinaimg.cn/large/7c98397dgy1fdyes1yb7fj211w0udwhp.jpg)|![](https://ws1.sinaimg.cn/large/7c98397dgy1fdyesdiqxjj211w0ud0vw.jpg)|
+
+|搜索页|404|
+|:------|:------|
+|![](https://ws1.sinaimg.cn/large/7c98397dgy1fe0flbno1bj223s1oq15m.jpg)|![](https://ws1.sinaimg.cn/large/7c98397dgy1fe0flvltizj223s1oq79a.jpg)|
+
+
+|移动端 - 首页|移动端 - 文章页|移动端 - 分类页|
+|:------|:------|:------|
+|![](https://ws1.sinaimg.cn/large/7c98397dgy1fdyesvc4wij20af0ijagh.jpg)|![](https://ws1.sinaimg.cn/large/7c98397dgy1fdyetejn5sj20af0ijta2.jpg)|![](https://ws1.sinaimg.cn/large/7c98397dgy1fdyetxmwe1j20af0ijdgj.jpg)|
+
 ## 主题使用
 
 **注意事项**：目前主题仅在 typecho 开发版，PHP7.0 下测试通过，其他情况未作太多测试
