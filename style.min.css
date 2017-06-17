@@ -1749,7 +1749,7 @@ img.qrcode{
 	font-size: 14px;
 	font-weight: 400;
 	display: block;
-	padding: 30px 0 30px 20px;
+	padding: 20px 0 20px 20px;
 	color: #5f5f5f
 }
 
@@ -1925,7 +1925,7 @@ img.qrcode{
 	position: relative;
 	z-index: 1;
 	margin-top: 0;
-	padding-bottom: 50px;
+	padding-bottom: 90px;
 	background-color: #fff
 }
 
@@ -1951,7 +1951,7 @@ img.qrcode{
 }
 
 .footer-meta {
-	padding: 50px 0 0;
+	padding: 30px 0 0;
 	list-style: none
 }
 
@@ -2302,8 +2302,20 @@ img.qrcode{
 }
 
 @media(max-width:410px) {
-	.meta-copyright-info .info-logo {
+/*	.meta-copyright-info .info-logo {
 		display: none
+	}*/
+
+	.footer {
+		padding-bottom: 23px
+	}
+
+	#comments .response {
+		padding: 15px 0 15px 20px
+	}
+
+	.comment-form {
+		margin: 0 0 30px
 	}
 }
 
