@@ -82,8 +82,6 @@
 			<span class="bottom-bar-item share">Share : </span>
 			<!-- <span class="bottom-bar-item bottom-bar-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($this->permalink()); ?>" target="_blank" title="<?php $this->title() ?>" rel="nofollow">facebook</a></span>
 			<span class="bottom-bar-item bottom-bar-twitter"><a href="https://twitter.com/intent/tweet?url=<?php echo urlencode($this->permalink()); ?>&text=<?php echo urlencode($this->title()); ?>" target="_blank" title="<?php $this->title() ?>" rel="nofollow">Twitter</a></span> -->
-
-
 			<span class="bottom-bar-item bottom-bar-weibo"><a href="http://service.weibo.com/share/share.php?url=<?php echo urlencode($this->permalink()); ?>&amp;title=【<?php echo urlencode($this->title()); ?>】<?php echo urlencode($this->excerpt(75, '...')); ?><?php if ($this->options->wb_appkey): ?>&amp;appkey=<?php $this->options->wb_appkey(); ?><?php endif; ?>" target="_blank" title="<?php $this->title() ?>" rel="nofollow">Weibo</a></span>
 			<span class="bottom-bar-item bottom-bar-qzone"><a href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=<?php echo urlencode($this->permalink()); ?>&amp;title=<?php echo urlencode($this->title()); ?>" target="_blank" title="<?php $this->title() ?>" rel="nofollow">Qzone</a></span>
 			<span class="bottom-bar-item bottom-bar-qrcode"><a onMouseOver="show_qrcode()" onMouseOut="hide_qrcode()">QRcode</a></span>
