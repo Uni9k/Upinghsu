@@ -2317,6 +2317,14 @@ img.qrcode{
 	.comment-form {
 		margin: 0 0 30px
 	}
+
+	.post-bottom-bar .social-share {
+	margin: 0 0 0 10px;
+	}
+
+	span.bottom-bar-item.share {
+		display: none
+	}
 }
 
 @-webkit-keyframes unpinned {
