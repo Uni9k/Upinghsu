@@ -8,7 +8,7 @@ function themeConfig($form) {
     $form->addInput($footerLogoUrl->addRule('xssCheck', _t('请不要在图片链接中使用特殊字符')));
     $favicon = new Typecho_Widget_Helper_Form_Element_Text('favicon', NULL, NULL, _t('favicon地址'), _t('一般为http://www.yourblog.com/image.png,支持 https:// 或 //,留空则不设置favicon'));
     $form->addInput($favicon->addRule('xssCheck', _t('请不要在图片链接中使用特殊字符')));
-    $iosicon = new Typecho_Widget_Helper_Form_Element_Text('iosicon', NULL, NULL, _t('apple touch icon地址'), _t('一般为http://www.yourblog.com/image.png,支持 https:// 或 //,留空则不设置Apple Touch Icon'));
+    $iosicon = new Typecho_Widget_Helper_Form_Element_Text('iosicon', NULL, NULL, _t('apple touch icon地址'), _t('一般为http://www.yourblog.com/image.png,支持 https:// 或 //,留空则不设置Apple Touch Icon,推荐分辨率144x144'));
     $form->addInput($iosicon->addRule('xssCheck', _t('请不要在图片链接中使用特殊字符')));
 
     $searchPage = new Typecho_Widget_Helper_Form_Element_Text('searchPage', NULL, NULL, _t('搜索页地址'), _t('输入你的 Template Page of Search 的页面地址,记得带上 http:// 或 https://'));
@@ -114,6 +114,9 @@ function themeConfig($form) {
     
     $qn_del = new Typecho_Widget_Helper_Form_Element_Text('qn_del', NULL, '', _t('首页缩略图要删除的七牛图片样式'),_t('留空则无，一般为imageMogr2/auto-orient/thumbnail/开头的参数，无特殊需求可不管'));
     $form->addInput($qn_del->addRule('xssCheck', _t('请不要在链接中使用特殊字符')));
+
+    $wb_appkey = new Typecho_Widget_Helper_Form_Element_Text('wb_appkey', NULL, '', _t('微博分享App Key'),_t('填写你从微博开放平台注册的应用中获取到的App Key，文章分享带小尾巴'));
+    $form->addInput($wb_appkey->addRule('xssCheck', _t('请不要在链接中使用特殊字符')));
 }
 
 function themeInit($archive){
